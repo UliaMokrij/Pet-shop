@@ -46,13 +46,13 @@ html{
     background-color: #ffffff;
     border-radius: 30px;
     height: 60px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.121);
 }
 
 .navbar-nav{
     padding: 7px;
     background-color: #ffffff;
     border-radius: 0px 0px 20px 20px;
-
 }
 
 .nav_link:hover{
@@ -76,7 +76,7 @@ html{
     align-items: center;
     background-color: #ffffff;
     border-radius: 30px;
-    padding: 10px;
+    padding: 7px;
 }
 
 .navbar-toggler{
@@ -114,6 +114,7 @@ html{
     height: 40px;
     background-color: rgb(247, 247, 247);
 }
+
 
 .search_placeholder{
     border-style: none;
@@ -172,4 +173,10 @@ html{
     width: 30%;
     font-size: 20px;
     margin-top: 30px;
+}
+
+.carousel-inner,.carousel{
+    height: 500px;
+    display: flex;
+    align-items: center;
 }
