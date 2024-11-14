@@ -1,10 +1,10 @@
 
 html{
-    background-color: aqua;
+    background-color: rgb(53, 53, 53);
 }
 .header{
     background-color: aliceblue;
-    padding: 0px 90px;
+    padding: 0% 10%;
 }
 
 .first_header{
@@ -122,7 +122,9 @@ html{
 }
 
 .block1{
-    padding-top: 90px;
+    background-color:  aliceblue;
+    padding-top: 5%;
+    padding-left: 10%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -137,21 +139,35 @@ html{
 }
 
 .p_block1{
-    margin-top: 60px;
+    margin-top: 5%;
 }
 
 .text_block1{
     display: flex;
     width: 50%;
     flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
-.img_block1{
+.img_block1_container{
     display: flex;
-    float: right;
-    align-items: end;
-    height: 90%;
+    width: 50%;
+    height: 200px;
+    align-self: flex-end;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.img2_block1,.img1_block1{
+    display: flex;
+    align-self: flex-end;
+    justify-content: end;
+    height: 300px;
+}
+
+.img2_block1{
+    padding-top: 10%;
+    padding-right: 30%;
 }
 
 .p_block1_orange{
@@ -166,39 +182,43 @@ html{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px 10px;
+    padding: 2% 1%;
     background: #090706;
     border-radius: 12px;
     color: #ffffff;
     width: 30%;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 10%;
 }
 
 
 .category{
-    background-color: #e0e8ec;
-    padding-left: 90px;
-    margin-top: 150px;
-    padding-bottom: 90px;
+    background-color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
 }
 
-.h1_category{
-    padding-top: 90px;
+.h1_category,.h1_featured{
+    padding-top: 5%;
 }
 
 .carousel-inner,.carousel{
-    margin-top: 90px;
-    height: 500px;
+    height: 600px;
+}
+
+.carousel_label{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-self: flex-start;
+    width: 30%;
+    margin-bottom: 13%;
 }
 
 .cards,.cards_featured_products{
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
-    padding: 30px;
     flex-wrap: wrap;
 }
 
@@ -214,11 +234,12 @@ html{
 
 .card_featured_products{
     margin-top: 100px;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     border-radius: 30px;
     border:none;
     background-color: #ffffff;
+    margin-bottom: 5%;
 }
 
 .card-img,.card-img_featured_products{
@@ -227,15 +248,18 @@ html{
 }
 
 .card-img_featured_products{
-    width: 400px;
+    width: 300px;
 }
 
-.h1_category,.h1_featured{
-    margin-top: 90px;
+
+.button_block1:hover{
+    background-color: #ff9900;
+    border-color: #ff9900;
 }
 
 .featured_products{
     padding-bottom: 90px;
+    background-color: #ffffff;
 }
 
 .h1_featured{
@@ -272,4 +296,25 @@ html{
 
 .products-number-card{
     color: #7d7d7d;
+}
+
+.block2{
+    padding-top: 5%;
+    background-color: aliceblue;
+}
+
+
+.text_block2{
+    display: flex;
+    width: 50%;
+    justify-self: flex-end;
+}
+
+.img1_block2{
+    display: flex;
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-self: flex-start;
+    float: left;
 }
