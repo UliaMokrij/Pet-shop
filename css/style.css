@@ -193,7 +193,7 @@ html{
 
 
 .category{
-    background-color: #ffffff;
+    background-color:aliceblue;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 10%;
@@ -233,22 +233,23 @@ html{
 }
 
 .card_featured_products{
-    margin-top: 100px;
-    width: 300px;
+    width: 400px;
     height: 300px;
     border-radius: 30px;
     border:none;
     background-color: #ffffff;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
 }
 
 .card-img,.card-img_featured_products{
-    padding: 20px;
+    padding: 10%;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .card-img_featured_products{
-    width: 300px;
+    width: 400px;
 }
 
 
@@ -279,7 +280,7 @@ html{
 }
 
 .btn_more:hover{
-    background-color: #090706;
+    background-color:#ff9900;
     color: #ffffff;
     border-radius: 100px;
 }
@@ -287,14 +288,18 @@ html{
 .card-information,.card-information_featured_products{
     border-radius: 0px 0px 20px 20px;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color:rgb(239, 249, 255);
+}
+
+.card-information{
+    background-color: #f3faff;
 }
 
 .text-card{
     font-size: large;
 }
 
-.products-number-card{
+.products-number-card,.price{
     color: #7d7d7d;
 }
 
@@ -317,4 +322,25 @@ html{
     padding-right: 10%;
     justify-self: flex-start;
     float: left;
+}
+
+.selling_products,.news{
+    padding: 5% 5%;
+    background-color: #ffffff;
+}
+
+.button_news{
+    background-color: #090706;
+    color:#ffffff;
+    display: flex;
+    border-radius: 30px;
+    padding: 5px 40px;
+    font-size: larger;
+    position: absolute;
+    margin: 2% 2%;
+
+}
+
+.cards_news{
+    margin-top: 5%;
 }
