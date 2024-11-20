@@ -1,0 +1,53 @@
+[
+    {
+        "title":"Premium Dog Food",
+        "price":"$20.99",
+        "img": "dogfoood1.png"
+    },
+
+    {
+        "title":"Cat Bowl",
+        "price":"$20.99",
+        "img": "catbowl1.jpg"
+    },
+    {
+        "title":"Cat Bed",
+        "price":"$43.99",
+        "img": "catbed1.jpg"
+    },
+    {
+        "title":"Premium Dog Food",
+        "price":"$19.99",
+        "img": "dogfood2.png"
+    },
+    {
+        "title":"Dog Leash",
+        "price":"$9.99",
+        "img": "dogleash1.png"
+    },
+    {
+        "title":"Premium Cat Food",
+        "price":"$19.99",
+        "img": "catfood2.png"
+    },
+    {
+        "title":"Dog Bowl",
+        "price":"$13.99",
+        "img": "dogbowl1.jpg"
+    },
+    {
+        "title":"Premium Dog Food",
+        "price":"$20.99",
+        "img": "dogfood3.png"
+    },
+    {
+        "title":"Dog Bed",
+        "price":"$43.99",
+        "img": "dogbed1.jpg"
+    },
+    {
+        "title":"Premium Dog Food",
+        "price":"$23.99",
+        "img": "dogfood4.png"
+    }
+]

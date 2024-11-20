@@ -26,7 +26,7 @@
         </div>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">PetShop</a>
+                <img class="navbar-brand" href="index.html" src="img/logopet.png" alt="PetShop">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -65,9 +65,9 @@
                             <button class="btn btn_search" type="submit"><i
                                     class="fa-solid fa-magnifying-glass "></i></button>
                         </form>
-                        <div class="nav-item basket ">
+                        <button class="nav-item basket " id="cartBtn">
                             <a class="nav-link" href="#"><i class="fa-solid fa-basket-shopping fa-lg"></i></a>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -102,13 +102,15 @@
                 <div class="carousel-item active">
                     <img src="img/carousel_image1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption carousel_label">
-                        <h1>Some representative placeholder content for the first slide.</h1>
+                        <h1>Bads for cats and dog</h1>
+                        <button class="button_carousel button_block1">More</button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/carousel_image2.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption carousel_label">
-                        <h1>Some representative placeholder content for the first slide.</h1>
+                        <h1>Food for cats and dog</h1>
+                        <button class="button_carousel button_block1">More</button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -131,7 +133,7 @@
             <h1 class="h1 h1_category">Browse by category</h1>
             <div class="cards">
                 <div class='card'>
-                    <img class='card-img' src='img/image1_category.png' alt=''>
+                    <img class='card-img' src='img/accessories.png' alt=''>
                     <div class="card-information">
                         <p class='text-card'>Accessories <a class="btn_more" href="#"><i
                                     class="fa-solid fa-arrow-right"></i></a></p>
@@ -139,27 +141,27 @@
                     </div>
                 </div>
                 <div class='card'>
-                    <img class='card-img' src='img/image1_category.png' alt=''>
+                    <img class='card-img' src='img/food.png' alt=''>
                     <div class="card-information">
-                        <p class='text-card'>Accessories <a class="btn_more" href="#"><i
+                        <p class='text-card'>Food <a class="btn_more" href="#"><i
                                     class="fa-solid fa-arrow-right"></i></a></p>
-                        <p class='products-number-card'>84 products</p>
+                        <p class='products-number-card'>46 products</p>
                     </div>
                 </div>
                 <div class='card'>
-                    <img class='card-img' src='img/image1_category.png' alt=''>
+                    <img class='card-img' src='img/furniture.jpg' alt=''>
                     <div class="card-information">
-                        <p class='text-card'>Accessories <a class="btn_more" href="#"><i
+                        <p class='text-card'>Furniture <a class="btn_more" href="#"><i
                                     class="fa-solid fa-arrow-right"></i></a></p>
-                        <p class='products-number-card'>84 products</p>
+                        <p class='products-number-card'>39 products</p>
                     </div>
                 </div>
                 <div class='card'>
-                    <img class='card-img' src='img/image1_category.png' alt=''>
+                    <img class='card-img' src='img/bags.jpg' alt=''>
                     <div class="card-information">
-                        <p class='text-card'>Accessories <a class="btn_more" href="#"><i
+                        <p class='text-card'>Bags <a class="btn_more" href="#"><i
                                     class="fa-solid fa-arrow-right"></i></a></p>
-                        <p class='products-number-card'>84 products</p>
+                        <p class='products-number-card'>78 products</p>
                     </div>
                 </div>
             </div>
@@ -167,32 +169,8 @@
 
         <div class="featured_products">
             <h1 class="h1 h1_featured">Featured products</h1>
-            <div class="cards_featured_products">
-                <div class='card card_featured_products' data-id="premiumdogfood1">
-                    <img class='card-img_featured_products' src='img/dogfoood1.png' alt=''>
-                    <div class="card-information_featured_products">
-                        <p class='text-card'>Premium Dog Food <a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='products-number-card'>$20.99</p>
-                    </div>
-                </div>
-                <div class='card card_featured_products' data-id="premiumcatfood1">
-                    <img class='card-img_featured_products' src='img/catfood1.png' alt=''>
-                    <div class="card-information_featured_products">
-                        <p class='text-card'>Premium Cat Food <a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='products-number-card'>$18.99</p>
-                    </div>
-                </div>
-                <div class='card card_featured_products' data-id="premiumdogfood2">
-                    <img class='card-img_featured_products' src='img/dogfood2.png' alt=''>
-                    <div class="card-information_featured_products">
-                        <p class='text-card'>Premium Dog Food <a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='products-number-card'>$19.99</p>
-                    </div>
-                </div>
-
+            <div class="products-list">
+                <!--Тут вигружатимуться дані товарів з JS-->
             </div>
         </div>
         <div class="block2">
@@ -205,81 +183,12 @@
                 <button class="button_block1 button_block1">Learn More</button>
             </div>
         </div>
-        <div class="selling_products">
-            <h1 class="h1">Best selling products</h1>
-            <div class="cards">
-                <div class='card' data-id="CatBowl1">
-                    <img class='card-img' src='img/catbowl1.jpg' alt=''>
-                    <div class="card-information">
-                        <p class='text-card'>Cat Bowl<a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='price'>$20.99</p>
-                    </div>
-                </div>
-                <div class='card' data-id="CatBed1">
-                    <img class='card-img' src='img/catbed1.jpg' alt=''>
-                    <div class="card-information">
-                        <p class='text-card'>Cat Bed<a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='price'>$43.99</p>
-                    </div>
-                </div>
-                <div class='card' data-id="DogLeash1">
-                    <img class='card-img' src='img/dogleash1.png' alt=''>
-                    <div class="card-information">
-                        <p class='text-card'>Dog Leash<a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='price'>$9.99</p>
-                    </div>
-                </div>
-                <div class='card' data-id="PremiumCatFood2">
-                    <img class='card-img' src='img/catfood2.png' alt=''>
-                    <div class="card-information">
-                        <p class='text-card'>Premium Cat Food<a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='price'>$19.99</p>
-                    </div>
-                </div>
-                <div class='card' data-id="DogBowl1">
-                    <img class='card-img' src='img/dogbowl1.jpg' alt=''>
-                    <div class="card-information">
-                        <p class='text-card'>Dog Bowl<a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='price'>$13.99</p>
-                    </div>
-                </div>
-                <div class='card' data-id="PremiumDogFood3">
-                    <img class='card-img' src='img/dogfood3.png' alt=''>
-                    <div class="card-information">
-                        <p class='text-card'>Premium Dog Food<a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='price'>$33.99</p>
-                    </div>
-                </div>
-                <div class='card' data-id="DogBed1">
-                    <img class='card-img' src='img/dogbed1.jpg' alt=''>
-                    <div class="card-information">
-                        <p class='text-card'>Dog Bed<a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='price'>$43.99</p>
-                    </div>
-                </div>
-                <div class='card' data-id="PremiumDogFood4">
-                    <img class='card-img' src='img/dogfood4.png' alt=''>
-                    <div class="card-information">
-                        <p class='text-card'>Premium Dog Food<a class="btn_more" href="#"><i
-                                    class="fa-regular fa-heart"></i></a></p>
-                        <p class='price'>$23.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="news">
             <h1 class="h1">News & Blog</h1>
             <div class="cards_news cards_featured_products">
                 <div class='card_news card_featured_products'>
                     <button class=" button_news">News</button>
-                    <img class='card-img_news card-img_featured_products' src='img/image1_category.png' alt=''>
+                    <img class='card-img_news card-img_featured_products' src='img/catfoodblue.jpg' alt=''>
                     <div class="card-information_news card-information_featured_products">
                         <p class='date products-number-card'>24 July, 2024</p>
                         <p class='text-card'>Urna cras et mauris congue nunc nisi nec tempus cursus </p>
@@ -287,7 +196,7 @@
                 </div>
                 <div class='card_news card_featured_products'>
                     <button class=" button_news">News</button>
-                    <img class='card-img_news card-img_featured_products' src='img/image1_category.png' alt=''>
+                    <img class='card-img_news card-img_featured_products' src='img/petsnews.jpg' alt=''>
                     <div class="card-information_news card-information_featured_products">
                         <p class='date products-number-card'>24 July, 2024</p>
                         <p class='text-card'>Urna cras et mauris congue nunc nisi nec tempus cursus </p>
@@ -295,7 +204,7 @@
                 </div>
                 <div class='card_news card_featured_products'>
                     <button class=" button_news">News</button>
-                    <img class='card-img_news card-img_featured_products' src='img/image1_category.png' alt=''>
+                    <img class='card-img_news card-img_featured_products' src='img/news1.webp' alt=''>
                     <div class="card-information_news card-information_featured_products">
                         <p class='date products-number-card'>24 July, 2024</p>
                         <p class='text-card'>Urna cras et mauris congue nunc nisi nec tempus cursus </p>
@@ -309,7 +218,7 @@
         <div class="footer-container">
             <div class="footer-section brand">
                 <h3>Pet Shop</h3>
-                <p>Sed viverra eget fames sit varius. Pellentesque mattis libero viverra dictumst ornare sed justo
+                <p class="brand_p">Sed viverra eget fames sit varius. Pellentesque mattis libero viverra dictumst ornare sed justo
                     convallis vitae</p>
                 <div class="social-icons">
                     <i class="fab fa-facebook"></i>
@@ -362,7 +271,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

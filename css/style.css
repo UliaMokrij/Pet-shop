@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(255, 255, 255);
 }
 
 .header {
@@ -8,6 +8,7 @@ html {
 }
 
 .first_header {
+    font-size: 1.2vw;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -37,24 +38,37 @@ html {
 }
 
 .container-fluid {
+    height: 5vw;
     width: 100%;
     background-color: #ffffff;
-    border-radius: 30px;
-    height: 60px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.121);
 }
 
 .navbar {
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 30px;
-    height: 60px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.121);
+    height: 5vw;
+    width: 80vw;
+}
+
+p{
+    font-size: 1.2vw;
 }
 
 .navbar-nav {
     padding: 7px;
     background-color: #ffffff;
-    border-radius: 0px 0px 20px 20px;
+    border-radius:10px 10px;
+}
+
+
+.navbar-brand{
+    width: 10%;
+    display: flex;
+    align-self: flex-start;
+}
+
+.nav_link{
+    font-size: 1.3vw;
 }
 
 .nav_link:hover {
@@ -86,11 +100,15 @@ html {
 }
 
 .basket {
-    margin-left: 10px;
-    background-color: #ffffff;
+    float: right;
     border-radius: 20px;
     padding: 7px;
+    border: none;
+    background: #00000000;
+
+
 }
+
 
 .navbar-brand {
     font-weight: 500;
@@ -133,14 +151,13 @@ html {
     justify-content: center;
     align-items: flex-start;
     flex: none;
-    height: auto;
 
 }
 
 .h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 54px;
+    font-size: 4vw;
 }
 
 .p_block1 {
@@ -149,36 +166,36 @@ html {
 
 .text_block1 {
     display: flex;
-    width: 50%;
+    width: 70vw;
     flex-direction: column;
-    padding-bottom: 100px;
 }
 
 .img_block1_container {
     display: flex;
-    width: 50%;
-    height: 200px;
+    width: 60vw;
+    flex-direction: column;
     align-self: flex-end;
     justify-content: end;
-    flex-direction: column;
+    margin-top: -10%;
 }
 
-.img2_block1,
+.img2_block1{
+    display: flex;
+    align-self: flex-end;
+    justify-content: end;
+    width: 39vw;
+    padding-right:15vw;
+}
 .img1_block1 {
     display: flex;
     align-self: flex-end;
     justify-content: end;
-    height: 300px;
-}
-
-.img2_block1 {
-    padding-top: 10%;
-    padding-right: 30%;
+    width: 18vw;
 }
 
 .p_block1_orange {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2vw;
     color: #ff9900;
 
 }
@@ -192,84 +209,95 @@ html {
     background: #090706;
     border-radius: 12px;
     color: #ffffff;
-    width: 30%;
-    font-size: 20px;
-    margin-top: 10%;
+    width: 10vw;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.button_carousel{
+    align-self: center;
 }
 
 
 .category {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 10%;
 }
 
-.h1_category,
-.h1_featured {
+.h1_category {
     padding-top: 5%;
-}
-
-.carousel-inner,
-.carousel {
-    height: 600px;
 }
 
 .carousel_label {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-self: flex-start;
-    width: 30%;
-    margin-bottom: 13%;
+    align-items: flex-start;
+    height: 70%;
+    
 }
 
-.cards,
-.cards_featured_products {
+.carousel_label h1{
+    width: 50%;
+    font-size: 5vw;
+    text-align: left;
+}
+
+.carousel_label button{
+    align-self:start;
+    width: 15%;
+    padding: 1%;
+    margin-top: 2.5vw;
+}
+
+.carousel-inner,
+.carousel {
+    align-items: flex-start;
+}
+
+.cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 1vw;
 }
+
+.products-list,.cards_featured_products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1vw;
+    margin-bottom: 10vw;
+}
+
 
 
 .card {
-    margin-top: 100px;
-    width: 300px;
-    height: 400px;
+    margin-top: 10%;
+    width: 20vw;
+    height: 20vw;
     border-radius: 30px;
     border: none;
     background-color: #ffffff;
 }
 
-.card_featured_products {
-    width: 400px;
-    height: 300px;
-    border-radius: 30px;
-    border: none;
-    background-color: #ffffff;
-    margin-bottom: 15%;
+.card-img{
+    height:auto;
 }
 
 .card-img,
 .card-img_featured_products {
-    border-radius: 30px;
+    border-radius: 20px 20px 0px 0px;
     display: flex;
     align-items: center;
-}
-
-.card-img_featured_products {
-    width: 400px;
 }
 
 
 .button_block1:hover {
     background-color: #ff9900;
     border-color: #ff9900;
-}
-
-.featured_products {
-    padding-bottom: 90px;
-    background-color: #ffffff;
 }
 
 .h1_featured {
@@ -305,13 +333,24 @@ html {
     background-color: #f3faff;
 }
 
-.text-card {
-    font-size: large;
+.card-img_news{
+    width: 25vw;
+}
+
+.text-card{
+    font-size: 1.5vw;
+}
+
+.title {
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: row;
 }
 
 .products-number-card,
 .price {
     color: #7d7d7d;
+    font-size: 1vw;
 }
 
 .block2 {
@@ -339,18 +378,40 @@ html {
 .news {
     padding: 5% 5%;
     background-color: #ffffff;
+    margin-bottom: 0.5vw;
 }
+
+.card_news{
+    width: 25vw;
+}
+
+.navbar-toggler{
+    width: 5vw;
+    padding: 0;
+    display: flex;
+    align-self: flex-start;
+}
+
+.navbar-toggler-icon{
+    width: 3vw;
+}
+
+
 
 .button_news {
     background-color: #090706;
     color: #ffffff;
     display: flex;
     border-radius: 30px;
-    padding: 5px 40px;
-    font-size: larger;
+    padding: 0.5vw 2.5vw;
+    font-size: 1.5vw;
     position: absolute;
     margin: 2% 2%;
 
+}
+
+.date{
+    font-size: 1.3vw;
 }
 
 .cards_news {
@@ -360,6 +421,7 @@ html {
 footer {
     background-color: aliceblue;
     padding: 40px;
+    font-size: 1.3vw;
 }
 
 .footer-container {
@@ -375,7 +437,7 @@ footer {
 }
 
 .footer-section h4 {
-    font-size: 18px;
+    font-size: 1.5vw;
     margin-bottom: 10px;
 }
 
@@ -398,9 +460,14 @@ footer {
 }
 
 .brand h3 {
-    font-size: 22px;
+    font-size: 1.5vw;
     margin-bottom: 15px;
 }
+
+.brand p {
+    font-size: 1.3vw;
+}
+
 
 .social-icons i {
     font-size: 20px;
