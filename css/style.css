@@ -93,7 +93,7 @@ p{
     border-style: none;
 }
 
-.basket {
+.basket,.buy{
     float: right;
     border-radius: 20px;
     padding: 7px;
@@ -419,6 +419,7 @@ footer {
     background-color: aliceblue;
     padding: 40px;
     font-size: 1.3vw;
+    position: bottom 0;
 }
 
 .footer-container {
