@@ -135,3 +135,4 @@ class ShoppingCart {
   
   // Створення об'єкта кошика
   let cart = new ShoppingCart();
+

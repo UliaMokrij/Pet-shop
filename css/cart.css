@@ -1,3 +1,40 @@
+html{
+    background-color: aliceblue;
+}  
+
 main{
     background-color: aliceblue;
+    padding: 1% 10%;
+}
+
+h1{
+    font-size: 3vw;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.cart-items-list,.order_amount{
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+}
+
+.form-group{
+    margin: 1vw 0vw;
+}
+
+.button{
+    padding: 10px;
+}
+
+label{
+    font-size: 1.5vw;
+    margin-bottom: 1%;
+}
+
+select{
+    margin-top: 1%;
+}
+
+.order{
+    display: none;
 }

@@ -4,7 +4,6 @@
         "price":"$20.99",
         "img": "dogfoood1.png"
     },
-
     {
         "title":"Cat Bowl",
         "price":"$20.99",
@@ -49,5 +48,14 @@
         "title":"Premium Dog Food",
         "price":"$23.99",
         "img": "dogfood4.png"
+    },{
+        "title":"Dog Leash",
+        "price":"$13.99",
+        "img": "dogleash2.png"
+    },
+    {
+        "title":"Dog Bed",
+        "price":"$30.99",
+        "img": "dogbed2.jpg"
     }
 ]

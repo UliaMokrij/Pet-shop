@@ -74,7 +74,7 @@
         if (cardData[cardId]) {
             const card = cardData[cardId];
             cardDetailsContainer.innerHTML = `
-<header class="header">
+    <header class="header">
         <div class="first_header">
             <div class="first_header1">
                 <p class="phone"><i class="fa-solid fa-phone"></i>+000 000 000 000</p>
@@ -87,7 +87,7 @@
         </div>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">PetShop</a>
+                <img class="navbar-brand" href="index.html" src="img/logopet.png" alt="PetShop">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +99,7 @@
                             <a class="home_btn nav-link nav_link activ" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav_link" href="#">About Us</a>
+                            <a class="nav-link nav_link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav_link" href="#">Contact Us</a>
@@ -126,9 +126,10 @@
                             <button class="btn btn_search" type="submit"><i
                                     class="fa-solid fa-magnifying-glass "></i></button>
                         </form>
-                        <div class="nav-item basket ">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-basket-shopping fa-lg"></i></a>
-                        </div>
+                        <button class="nav-item basket " id="cartBtn">
+                            <i class="fa-solid fa-basket-shopping fa-lg"></i>
+                            <span class="position-absolute top-10 start-90 translate-middle badge text-light text-bg-danger rounded-pill">0</span>
+                        </button>
                     </div>
                 </div>
             </div>
