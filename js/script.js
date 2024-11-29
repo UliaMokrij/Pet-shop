@@ -1,3 +1,23 @@
+// Функція для отримання значення кукі за ім'ям
+function getCookieValue(cookieName) {
+  // Розділяємо всі куки на окремі частини
+  const cookies = document.cookie.split(";");
+
+  // Шукаємо куки з вказаним ім'ям
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim(); // Видаляємо зайві пробіли
+
+    // Перевіряємо, чи починається поточне кукі з шуканого імені
+    if (cookie.startsWith(cookieName + "=")) {
+      // Якщо так, повертаємо значення кукі
+      return cookie.substring(cookieName.length + 1); // +1 для пропуску символу "="
+    }
+  }
+  // Якщо кукі з вказаним іменем не знайдено, повертаємо порожній рядок або можна повернути null
+  return "";
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card");
     const home_btn = document.querySelector(".home_btn");
@@ -12,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "index.html";
     });
 });
+
 
 async function getProducts() {
     // Виконуємо запит до файлу "store_db.json" та очікуємо на відповідь
@@ -37,6 +58,17 @@ function getCardHTML(product) {
     </div>
             
         `;
+}
+
+
+function addToCart(event) {
+  // Отримуємо дані про товар з data-атрибута кнопки
+  const productData = event.target.getAttribute("data-product");
+  const product = JSON.parse(productData);
+  alert("Товар додано в кошик ");
+  console.log(product);
+  // Додаємо товар до кошика
+  cart.addItem(product);
 }
 
 getProducts().then(function (products) {
