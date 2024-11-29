@@ -2,73 +2,73 @@
     {
         "data_id":"premiumdogfood1",
         "title":"Premium Dog Food",
-        "price":"$20.99",
+        "price":"20.99",
         "img": "dogfoood1.png"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Cat Bowl",
-        "price":"$20.99",
+        "price":"20.99",
         "img": "catbowl1.jpg"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Cat Bed",
-        "price":"$43.99",
+        "price":"43.99",
         "img": "catbed1.jpg"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Premium Dog Food",
-        "price":"$19.99",
+        "price":"19.99",
         "img": "dogfood2.png"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Dog Leash",
-        "price":"$9.99",
+        "price":"9.99",
         "img": "dogleash1.png"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Premium Cat Food",
-        "price":"$19.99",
+        "price":"19.99",
         "img": "catfood2.png"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Dog Bowl",
-        "price":"$13.99",
+        "price":"13.99",
         "img": "dogbowl1.jpg"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Premium Dog Food",
-        "price":"$20.99",
+        "price":"20.99",
         "img": "dogfood3.png"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Dog Bed",
-        "price":"$43.99",
+        "price":"43.99",
         "img": "dogbed1.jpg"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Premium Dog Food",
-        "price":"$23.99",
+        "price":"23.99",
         "img": "dogfood4.png"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Dog Leash",
-        "price":"$13.99",
+        "price":"13.99",
         "img": "dogleash2.png"
     },
     {
         "data_id":"premiumcatfood1",
         "title":"Dog Bed",
-        "price":"$30.99",
+        "price":"30.99",
         "img": "dogbed2.jpg"
     }
 ]
