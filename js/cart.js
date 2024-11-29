@@ -10,19 +10,17 @@ orderBtn.addEventListener("click", function () {
 });
 
 function get_item(item) {
-  return `<div class = "cart-item">
+  return `<div class = "cart-item" style='background-color: white;margin-bottom:20px;padding:0vw 4vw;border-radius:30px;display:flex;justify-content: space-between;align-items:center'>
         <h4 class="cart-item-title">${item.title}</h4>
-        <img src="img/${item.img}" width="90px"/>
-        <div class="cart-item-quantity">Кількість: 
+        <img src="img/${item.img}" width="150px"/>
+        <div class="cart-item-quantity">Quantity: 
         <input data-item="${
           item.title
         }" class="form-control quantity-input" type="number" name="quantity" min="1" value="${
     item.quantity
   }">
         </div>
-        <div class="cart-item-price" data-price="${item.price}">${
-    item.price * item.quantity
-  } $ </div>
+        <div class="cart-item-price" data-price="${item.price}"> ${item.price * item.quantity}</div>
         </div>`;
 }
 
