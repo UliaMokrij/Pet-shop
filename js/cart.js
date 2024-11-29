@@ -12,7 +12,7 @@ orderBtn.addEventListener("click", function () {
 function get_item(item) {
   return `<div class = "cart-item">
         <h4 class="cart-item-title">${item.title}</h4>
-        <img src="images/${item.image}" width="90px"/>
+        <img src="img/${item.img}" width="90px"/>
         <div class="cart-item-quantity">Кількість: 
         <input data-item="${
           item.title
@@ -22,7 +22,7 @@ function get_item(item) {
         </div>
         <div class="cart-item-price" data-price="${item.price}">${
     item.price * item.quantity
-  } грн</div>
+  } $ </div>
         </div>`;
 }
 
