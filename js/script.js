@@ -35,7 +35,7 @@ function getCardHTML(product) {
         <img class='img card-img' src='img/${product.img}' alt=''>
             <div class="card-information">
                 <p class='title'>${product.title}</p>
-                <p class='price'>${product.price}</p>
+                <p class='price'>${product.price} $ </p>
                 <a href="" class="nav-link nav-item buy cart-btn" id="cartBtn" data-product='${productData}'><i class="fa-solid fa-basket-shopping fa-lg"></i></a>
             </div>
     </div>

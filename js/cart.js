@@ -20,7 +20,7 @@ function get_item(item) {
     item.quantity
   }">
         </div>
-        <div class="cart-item-price" data-price="${item.price}"> ${item.price * item.quantity}</div>
+        <div class="cart-item-price" data-price="${item.price}"> ${item.price * item.quantity} $ </div>
         </div>`;
 }
 

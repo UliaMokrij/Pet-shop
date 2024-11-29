@@ -38,7 +38,6 @@ html {
 }
 
 .container-fluid {
-    height: 4vw;
     width: 100%;
     background-color: #ffffff;
     border-radius: 40px;
@@ -46,8 +45,7 @@ html {
 }
 
 .navbar {
-    height: 5vw;
-    width: 80vw;
+    width: 100%;
 }
 
 p{
@@ -62,7 +60,7 @@ p{
 
 
 .navbar-brand{
-    width: 6vw;
+    width: 7vw;
     display: flex;
     align-self: center;
 }
