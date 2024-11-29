@@ -25,7 +25,7 @@ function get_item(item) {
 function showCartList() {
   cart_list.innerHTML = " ";
   for (let key in cart.items) {
-    // проходимося по всіх ключах об'єктах cart.items
+    // проходимося по всіх ключах об'єктa cart.items
     cart_list.innerHTML += get_item(cart.items[key]);
   }
   cart_total.innerHTML = cart.calculateTotal();
