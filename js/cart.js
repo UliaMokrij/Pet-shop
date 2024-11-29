@@ -1,14 +1,18 @@
-let orderBtn = document.querySelector("#orderBtn")
-let orderSection = document.querySelector('.order')
-
+let orderBtn = document.querySelector("#orderBtn");
+let orderSection = document.querySelector(".order");
 
 let cart_list = document.querySelector(".cart-items-list");
 let cart_total = document.querySelector(".cart-total");
 
+orderBtn.addEventListener("click", function () {
+  orderBtn.style.display = "none";
+  orderSection.style.display = "block";
+});
+
 function get_item(item) {
   return `<div class = "cart-item">
         <h4 class="cart-item-title">${item.title}</h4>
-        <img src="images/${item.img}" width="90px"/>
+        <img src="images/${item.image}" width="90px"/>
         <div class="cart-item-quantity">Кількість: 
         <input data-item="${
           item.title
@@ -23,9 +27,9 @@ function get_item(item) {
 }
 
 function showCartList() {
-  cart_list.innerHTML = " ";
+  cart_list.innerHTML = "";
   for (let key in cart.items) {
-    // проходимося по всіх ключах об'єктa cart.items
+    // проходимося по всіх ключах об'єкта cart.items
     cart_list.innerHTML += get_item(cart.items[key]);
   }
   cart_total.innerHTML = cart.calculateTotal();
@@ -42,9 +46,3 @@ cart_list.addEventListener("change", (event) => {
     showCartList(); // Оновити список товарів у кошику
   }
 });
-
-
-orderBtn.addEventListener("click", function(){
-    orderBtn.style.display = 'none'
-    orderSection.style.display = 'block'
-})
