@@ -42,6 +42,8 @@ function getCardHTML(product) {
 }
 //CARD_HTML
 
+//ShoppingCart
+
 function addToCart(event) {
   event.preventDefault();
   const button = event.target.closest(".cart-btn");
@@ -151,3 +153,5 @@ class ShoppingCart {
 }
 
 let cart = new ShoppingCart();
+
+//ShoppingCart
