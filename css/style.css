@@ -48,24 +48,24 @@ html {
     width: 100%;
 }
 
-p{
+p {
     font-size: 1.2vw;
 }
 
 .navbar-nav {
     padding: 5px;
     background-color: #ffffff;
-    border-radius:10px 10px;
+    border-radius: 10px 10px;
 }
 
 
-.navbar-brand{
+.navbar-brand {
     width: 7vw;
     display: flex;
     align-self: center;
 }
 
-.nav_link{
+.nav_link {
     font-size: 1.3vw;
 }
 
@@ -79,6 +79,7 @@ p{
     font-weight: 500;
 
 }
+
 .search_form_basket {
     display: flex;
     align-items: center;
@@ -91,7 +92,8 @@ p{
     border-style: none;
 }
 
-.basket,.buy{
+.basket,
+.buy {
     float: right;
     border-radius: 20px;
     padding: 7px;
@@ -169,13 +171,14 @@ p{
     margin-top: -10%;
 }
 
-.img2_block1{
+.img2_block1 {
     display: flex;
     align-self: flex-end;
     justify-content: end;
     width: 39vw;
-    padding-right:15vw;
+    padding-right: 15vw;
 }
+
 .img1_block1 {
     display: flex;
     align-self: flex-end;
@@ -205,7 +208,7 @@ p{
     margin-bottom: 10%;
 }
 
-.button_carousel{
+.button_carousel {
     align-self: center;
 }
 
@@ -226,17 +229,17 @@ p{
     flex-direction: column;
     align-items: flex-start;
     height: 70%;
-    
+
 }
 
-.carousel_label h1{
+.carousel_label h1 {
     width: 50%;
     font-size: 5vw;
     text-align: left;
 }
 
-.carousel_label button{
-    align-self:start;
+.carousel_label button {
+    align-self: start;
     width: 15%;
     padding: 1%;
     margin-top: 2.5vw;
@@ -254,7 +257,8 @@ p{
     padding: 1vw;
 }
 
-.products-list,.cards_featured_products{
+.products-list,
+.cards_featured_products {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -266,7 +270,7 @@ p{
 
 .card {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 80px;
     width: 20vw;
     height: 20vw;
     border-radius: 30px;
@@ -274,8 +278,8 @@ p{
     background-color: #ffffff;
 }
 
-.card-img{
-    height:auto;
+.card-img {
+    height: auto;
 }
 
 .card-img,
@@ -315,7 +319,7 @@ p{
 
 .card-information,
 .card-information_featured_products {
-    border-radius: 0vw 0vw 2vw 2vw;
+    border-radius: 0px 0px 20px 20px;
     padding: 20px;
     background-color: rgb(239, 249, 255);
 }
@@ -324,11 +328,11 @@ p{
     background-color: #f3faff;
 }
 
-.card-img_news{
+.card-img_news {
     width: 25vw;
 }
 
-.text-card{
+.text-card {
     font-size: 1.5vw;
 }
 
@@ -341,7 +345,7 @@ p{
 .products-number-card,
 .price {
     color: #7d7d7d;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .block2 {
@@ -349,7 +353,7 @@ p{
     background-color: aliceblue;
 }
 
-.badge{
+.badge {
     font-size: 10px;
     padding: 2px 4px;
 }
@@ -376,18 +380,18 @@ p{
     margin-bottom: 0.5vw;
 }
 
-.card_news{
+.card_news {
     width: 25vw;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     width: 5vw;
     padding: 0;
     display: flex;
     align-self: flex-start;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     width: 3vw;
 }
 
@@ -405,7 +409,7 @@ p{
 
 }
 
-.date{
+.date {
     font-size: 1.3vw;
 }
 
@@ -496,60 +500,131 @@ footer {
     padding: 0;
     line-height: 1.6;
     color: #333;
-  }
-  
-  h1, h2 {
-    color: #000;
-  }
-  
-  .stats span {
+}
+
+.stats span {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ff6f00;
-  }
-  
-  .testimonials {
+}
+
+.testimonials {
     background: #f9f9f9;
-  }
-  
-  .testimonial-text {
+}
+
+.testimonial-text {
     font-size: 1.1rem;
     font-style: italic;
     margin-bottom: 15px;
-  }
-  
-  .author {
-    font-weight: bold;
-  }
-  
-  .author span {
-    font-size: 0.9rem;
-    color: #777;
-  }
-
-
-.feedback,.name,.customer{
-    color: #000;
-    
 }
 
-.feedback{
+.author {
+    font-weight: bold;
+}
+
+.author span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.feedback {
     text-wrap: wrap;
 }
 
-.name{
+.name {
     font-size: 2vw;
     font-weight: 600;
 }
 
-.customer{
+.customer {
     color: #777;
     font-size: 1.5vw;
 }
-  
-.fa-star{
+
+.fa-star {
     color: #ffdd00;
     margin-bottom: 5%;
     font-size: 1.5vw;
     margin-right: 5px;
+}
+
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    gap: 40px;
+    background-color: #fff;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e66d00;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info .icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #000000;
 }

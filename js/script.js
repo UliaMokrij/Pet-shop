@@ -9,6 +9,7 @@ function getCookieValue(cookieName) {
   return "";
 }
 
+//CARD_HTML
 async function getProducts() {
   try {
     let response = await fetch("store_db.json");
@@ -39,6 +40,7 @@ function getCardHTML(product) {
     </div>
   `;
 }
+//CARD_HTML
 
 function addToCart(event) {
   event.preventDefault();

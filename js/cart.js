@@ -10,9 +10,9 @@ orderBtn.addEventListener("click", function () {
 });
 
 function get_item(item) {
-  return `<div class = "cart-item" style='background-color: white;margin-bottom:20px;padding:0vw 4vw;border-radius:30px;display:flex;justify-content: space-between;align-items:center'>
+  return `<div class = "cart-item" style='background-color: white;margin-bottom:20px;padding:0vw 4vw;border-radius:30px;display:flex;justify-content: space-between;align-items:center;width:80vw'>
         <h4 class="cart-item-title">${item.title}</h4>
-        <img src="img/${item.img}" width="150px"/>
+        <img src="img/${item.img}" width="100vw"/>
         <div class="cart-item-quantity">Quantity: 
         <input data-item="${
           item.title
